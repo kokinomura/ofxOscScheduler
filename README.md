@@ -14,7 +14,7 @@ void testApp::sendOSC() {
     ofxOscMessage m;
     m.setAddress("/address");
     m.addStringArg("hello");
-    sender.sendMessageRepeat(m, 5, 0.5);
+    sender.sendMessageRepeat(m);
 } 
 ```
 
@@ -49,6 +49,7 @@ public:
 ```
 void testApp::setup() {
     sender.setup(HOST, PORT);
+    sender.setRepeat(5, 0.5);  // sender will send a message 5 times in 0.5 seconds
 }
 ```
 
@@ -59,7 +60,7 @@ void testApp::sendOSC() {
     ofxOscMessage m;
     m.setAddress("/address");
     m.addFloatArg("hello");
-    sender.sendMessage(m);
+    sender.sendMessage(m);  // sends a message once regardless of setRepeat()
 }   
 ```
 
@@ -81,7 +82,7 @@ void testApp::sendOSC() {
     ofxOscMessage m;
     m.setAddress("/address");
     m.addStringArg(3.0);
-    sender.sendMessageRepeat(m, 5, 0.5);  // sends a message 5 times in 0.5 seconds
+    sender.sendMessageRepeat(m);  // sends a message multiple times
 }   
 ```
 
@@ -92,7 +93,7 @@ void testApp::sendOSC() {
     ofxOscMessage m;
     m.setAddress("/address");
     m.addStringArg(3.0);
-    sender.reserveMessageRepeat(m, 5, 0.5, 2.0);  // sends a message 5 times in 0.5 seconds with 2.0 seconds delay
+    sender.reserveMessageRepeat(m, 2.0);  // sends a message multiple times with 2.0 seconds delay
 }   
 ```
 
