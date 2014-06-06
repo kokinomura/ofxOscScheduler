@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DD72297B-E5EC-4289-A92B-2FC1EB30E066</string>
+	<key>IDESourceControlProjectName</key>
+	<string>example-Simple</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>34F78721-E08E-4B26-BA18-90D0B79F254A</key>
+		<string>https://github.com/kokinomura/ofxOscScheduler</string>
+		<key>B2CC908C-B9D8-4787-B38D-6934834EAD10</key>
+		<string>git://github.com/arturoc/ofxTween.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>example-Simple/example-Simple.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>34F78721-E08E-4B26-BA18-90D0B79F254A</key>
+		<string>../../..</string>
+		<key>B2CC908C-B9D8-4787-B38D-6934834EAD10</key>
+		<string>../../../../ofxTween</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kokinomura/ofxOscScheduler</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>34F78721-E08E-4B26-BA18-90D0B79F254A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>34F78721-E08E-4B26-BA18-90D0B79F254A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxOscScheduler</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B2CC908C-B9D8-4787-B38D-6934834EAD10</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxTween</string>
+		</dict>
+	</array>
+</dict>
+</plist>
