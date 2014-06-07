@@ -8,13 +8,13 @@ ofxOscScheduler is an addon for openFrameworks that allows you to send OSC messa
 In addition to being a scheduler, it intends to somehow guarantee delivery of OSC messages by sending them multiple times since UDP which OSC is based on does not guarantee. For sure, the ultimate solution is to use TCP instead of UDP while most of OSC libraries do not support TCP. ofxOscScheduler helps you to avoid unapparent trouble with OSC.
 
 
-- In this example, you will send a same message 5 times in 0.5 seconds.
+- In this example, you will send "hello" 5 times in 0.5 seconds with 2.0 seconds delay.
 ```cpp
 void testApp::sendOSC() {
     ofxOscMessage m;
     m.setAddress("/address");
     m.addStringArg("hello");
-    sender.sendMessageRepeat(m);
+    sender.reserveMessageRepeat(m, 2.0);
 } 
 ```
 
