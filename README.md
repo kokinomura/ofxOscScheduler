@@ -10,6 +10,11 @@ In addition to being a scheduler, it intends to somehow guarantee delivery of OS
 
 - In this example, you will send "hello" 5 times in 0.5 seconds with 2.0 seconds delay.
 ```cpp
+- void testApp::setup() {
+    sender.setup(HOST, PORT);
+    sender.setRepeat(5, 0.5);  // sender will send a message 5 times in 0.5 seconds
+}
+
 void testApp::sendOSC() {
     ofxOscMessage m;
     m.setAddress("/address");
